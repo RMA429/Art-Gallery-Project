@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <p><a href="/index"> <h1 align="center"> <img src="https://cdn.discordapp.com/attachments/645786288523575307/646447530086891551/logo.png" alt="VG_ART" class="center"> </h1> </a>
+  <title>Upload some Art!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet"  href="/main.css" type="text/css">
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+    
+
+</head>
+
+<body>
+   <form id = "Uploader">
+    
+  <!--centered labels, logo, and styling - Eden-->
+<div class= "center">
+  <div class="form-group">
+      <label for="exampleArtName">Name of artwork</label>
+        <input type="textbox" name="Artname" id = "Artname"  value="{{propogate}}" class="form-control" placeholder="Artname">
+    </div>
+
+<div class="form-group">
+      <label for="exampleArtName">Name of artist</label>
+        <input type="textbox" name="Artistname" id = "Artistname" value="{{propogate}}" class="form-control" placeholder="Artistname">
+    </div>
+
+    <div class="form-group">
+      <label for="exampleArtName">Name of Game series</label>
+        <input type="textbox" name="GameName" id = "GameName" value="{{propogate}}" class="form-control" placeholder="GameName">
+    </div>
+</div>
+  <div>
+    <input type='file' id="chooseFileBox" />
+  
+  <button type="submit" name="upload_btn" value="pressed" class="btn btn-primary" id = "Work">1-UPload! <a href = "/index"> </a></button>
+
+  </div>
+</form>
+
+</body>
+
+<script src="/static/upload.js"></script>
+</html>

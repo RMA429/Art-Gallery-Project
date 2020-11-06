@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="../static/main.css" type="text/css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <div>
+    <p><a href="/index"> <h1 align="center"> <img src="https://cdn.discordapp.com/attachments/645786288523575307/646447530086891551/logo.png" alt="VG_ART" class="center"> </h1> </a>
+    </div>
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="pb-2 mt-4 mb-2">
+            <h1>
+            <h1>Begin the dive:</h1>
+        </div>
+    </div>
+<!--changed search bar to center for appeal-->
+    <div class="center">
+        <form action="/results" name="myForm" method="GET">
+                    <div class="input-group">
+                        <input type="text" name="terms" id="search" class="form-control">
+                        <button id="buten">Search</button>
+                    </div>
+        </form>
+    </div>    
+    <div></div>
+<!--        {{#works}}
+        <tr>
+            <td rowspan="1">
+            <img class="thumb" src={{image_url}}>
+            </td>
+            <td><span class="name"><a href="/gallery/{{id}}">{{name}}</a></span></td>
+            <td class="artist">{{artist.name}}</td>
+        </tr>
+        {{/works}}-->
+<!--<table class="table">-->
+<!--fixed issue with row line spanning across screen fixed by just putting images out and about rather than having it similar to results page-->
+<tbody>
+    {{#art}}
+    
+    <tr>
+        <td rowspan ="1" class = "center">
+        <a href="/gallery/{{id}}"><img height="150" width="150" src ={{image_url}} class="name2"></a>
+        </td>
+       <!-- <th scope="rowgroup"> <img class="lineimg" src={{image_url}}> </th> -->
+        <!--<td><span class="name2"><a href="/gallery/{{id}}">{{name}}</a></span></td>-->
+    </tr>
+   
+    {{/art}}
+</tbody>
+<!--</table>-->
+</body>
+</html>

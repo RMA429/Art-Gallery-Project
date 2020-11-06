@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../static/main.css" type="text/css">
+
+    </head>
+    <div> <!--Added logo and CSS layouts - Eden-->
+    <p><a href="/index"> <h1 align="center" > <img src="https://cdn.discordapp.com/attachments/645786288523575307/646447530086891551/logo.png" alt="VG_ART" class="center"> </h1> </a>
+    </div>
+<h1>Welcome to Gameart VG</h1>
+
+<body>
+    <a href="/profile" id="profileLink">Profile</a><br>
+    <!-- AMMEND THIS WITH LOGOUT IF ALREADY LOGGED-IN -->
+    {{#unless user}}
+    <a href="/login_register" id="loginRegisterLink">Login or Register</a><br>
+    {{/unless}}
+    <a href="/search" id="databaseLink">Database Dive</a><br>
+    <a href="/uploadPage" id="/upload" id="uploadLink">Upload Now!</a><br>
+    <div class="center"> <!-- more centering -Eden -->
+        <form class = "dive" action="/results" method="GET">
+                    <div class="input-group">
+                        <input type="text" name="terms" id="search" class="form-control">
+                        <span class="input-group-btn"><button class="btn btn-primary" id="buten">Search</button></span>
+                    </div>
+        </form>
+    </div>
+    {{#user}}
+    <div class="footer"><a href="/logout">(Logout)</a></div>
+    {{/user}}
+    <script src="../static/index.js"></script>
+</body>
+</html>

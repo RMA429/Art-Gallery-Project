@@ -1,0 +1,33 @@
+{
+  "name": "assn08-server-side-shopping-sleeplost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UTRGV-CS-3342/assn08-server-side-shopping-sleeplost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UTRGV-CS-3342/assn08-server-side-shopping-sleeplost/issues"
+  },
+  "homepage": "https://github.com/UTRGV-CS-3342/assn08-server-side-shopping-sleeplost#readme",
+  "dependencies": {
+    "aws-sdk": "^2.576.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.3",
+    "package-lock.json": "^1.0.0",
+    "sequelize": "^5.21.2",
+    "sequelize-auto": "^0.4.29",
+    "sqlite3": "^4.1.0"
+  }
+}

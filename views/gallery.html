@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<title>Gallery</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/main.css" type="text/css">
+<p><a href="/index"> <h1 align="center"> <img src="https://cdn.discordapp.com/attachments/645786288523575307/646447530086891551/logo.png" alt="VG_ART" class="center"> </h1> </a>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="../static/gallery.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="pb-2 mt-4 mb-2 border-bottom">
+	<h1>{{art.name}}</h1>
+	<h4>{{artist}}</h4>
+	<h6><a href="/gamepage/{{gameID}}">{{game}}</a></h6>
+	<p><a href="/search">back to the beginning</a></p>
+</div>
+
+<tr>
+	<td rowspan="1">
+		<img class="gal" src={{art.image_url}}>
+	</td>
+</tr>
+
+
+
+</div>
+
+</body>
+
+</html>

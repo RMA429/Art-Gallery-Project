@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <link rel="stylesheet"  href="/main.css" type="text/css">
+            <script src="http://code.jquery.com/jquery.min.js"></script>
+
+    </head>
+<div class="row col-8">
+    <table class="table">
+
+        <thead>
+            <tr>
+            <!-- added logo and centering for aesthetic -Eden -->
+            <!-- added link back to index via logo click-->
+            <p><a href="/index"> <h1 align="center"> <img src="https://cdn.discordapp.com/attachments/645786288523575307/646447530086891551/logo.png" alt="VG_ART" class="center"> </h1> </a>
+            <div class="center">
+                <form action="/results" name="myForm" method="GET">
+                    <div class="input-group">
+                        <input type="text" name="terms" id="search" class="form-control">
+                        <button id="buten">Search</button>
+                    </div>
+                </form>
+                  </div> 
+            <!-- added search bar to go to different artists -Eden -->
+                <th></th>
+                <th>Name</th>
+                <th>Artist</th>
+            </tr>
+        </thead>
+
+
+        <!--
+            Generate table rows from database and propogate via Handlebars
+        -->
+        
+        {{#works}}
+        <tr>
+            <td rowspan="1">
+            <img class="thumb" src={{image_url}}>
+            </td>
+            <td><span class="name"><a href="/gallery/{{id}}">{{name}}</a></span></td>
+            <td class="artist">{{artist.name}}</td>
+        </tr>
+        {{/works}}
+</table>
+</div>
+</html>

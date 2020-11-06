@@ -1,0 +1,115 @@
+.error {
+	color: red;
+	font-style: italic;
+}
+body {
+	background-color: #e1e8f0;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	width: 20%;
+}
+
+.gameimg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	width: 55%;
+}
+
+.prof{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.artist {
+	text-align: center;
+}
+
+.thumb { 
+	width : 100px;
+	height: 100px;
+	align-content: center;
+}
+.gal { 
+	width: 70%;
+	border-radius: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.gal2 {
+	width: 100%;
+	border-radius: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gal:hover{
+	opacity: 0.7;
+	cursor:pointer;
+}
+
+.gridimg{
+	max-width: 25%;
+	display: inline-block;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gridimg:hover{
+	opacity: 0.7;
+	cursor:pointer;
+}
+
+.lineimg{
+	display:inline-block;
+	width: 300px;
+	vertical-align: middle;
+}
+.search {
+	width: 100px;
+}
+.name { font-weight: bold;
+	text-align: center;}
+
+.name2 { 
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+html, body{
+	width: 100%;
+}
+
+table{
+	margin:auto;
+}
+
+.grid-container{
+	display: table-row-group;
+	align-content: center;
+}
+/*added this for centering of headers and bodys*/
+h1 {
+	color: #262627;
+	text-align: center;
+}
+
+body {
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
